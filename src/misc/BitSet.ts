@@ -775,9 +775,9 @@ export class BitSet implements Iterable<number>{
 	}
 
 	// Overrides formatting for nodejs assert etc.
-	[(util.inspect as any).custom](): string {
+	/*[(util.inspect as any).custom](): string {
 		return "BitSet " + this.toString();
-	}
+	}*/
 }
 
 class BitSetIterator implements IterableIterator<number>{
